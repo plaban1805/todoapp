@@ -1,4 +1,4 @@
-FROM artifactory.itg.ti.com/docker-prod/node:14-alpine
+FROM node:14-alpine
 
 WORKDIR /app
 

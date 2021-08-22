@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="header">
+    <input class="search-bar" #task type="text" >
+    <button class="button" (click)="onAddTask(task.value)">Add</button>
+  </div>
+  <table id="tasks">
+    <tr>
+      <th style="text-align: center;">My TO-DO List</th>
+    </tr>
+    <tr *ngFor="let task of tasks">
+      <td>{{ task.text }}</td>
+    </tr>
+  </table>
+</div>

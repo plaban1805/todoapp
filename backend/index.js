@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 });
 
 mongoose.connect(
-  'mongodb://localhost:27017/tasks',
+  'mongodb://mongodb:27017/tasks',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -26,7 +26,7 @@ mongoose.connect(
       console.error(err);
     } else {
       console.log('CONNECTED.');
-      app.listen(80);
+      app.listen(8080);
     }
   }
 );

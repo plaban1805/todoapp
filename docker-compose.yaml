@@ -1,11 +1,9 @@
 version: "3.3"
 services: 
   mongodb:
-    build: 
-      context: ./mongo
-      dockerfile: Dockerfile
+    image: mongo
     volumes:
-      - todoapp_db:/data/mongodb
+      - todoapp_db:/data/db
     
   backend:
     build:

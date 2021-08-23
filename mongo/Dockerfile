@@ -1,4 +1,4 @@
-FROM artifactory.itg.ti.com/docker-public/library/centos:7
+FROM centos:7
 
 RUN echo -e "\
 [mongodb]\n\
